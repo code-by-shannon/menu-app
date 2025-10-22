@@ -1,0 +1,119 @@
+
+Objective
+Develop a web-based food ordering application using just HTML, CSS, and JavaScript. This application will allow users to select and order dishes from a list of available options.
+
+Requirements:
+Browse Dishes:
+
+Display a list of available dishes on the main page.
+Each dish should have a name, image, brief description, price, and quantity available.
+The dishes should be stored in an array of objects. Each object will represent a dish.
+Select Dishes & Order:
+
+Next to each dish, provide an "Add to Cart" button.
+Display a floating cart icon or a sidebar showing the number of dishes added.
+Upon clicking the cart icon, show a dropdown or a modal that lists the selected dishes with their quantities.
+The "Add to Cart" should be disabled once you have reached the maximum quantity of that product.
+Cart Management:
+
+Within the cart dropdown:
+Allow users to increase or decrease the quantity of a dish.
+Display the total price based on quantities.
+Provide an "Order Now" button, which, when clicked, displays a confirmation message and then resets the cart.
+Calculate tax of 9%
+Design and Usability:
+
+Use CSS to make the app visually appealing.
+Ensure the application is user-friendly and intuitive.
+FAQ:
+
+At the bottom of the page we're going to create an FAQ section. This FAQ section should function as an accordion. 
+Here is an example from Bootstrap: Accordion · Bootstrap v5.0 (getbootstrap.com)Links to an external site.
+Links to an external site.This example is so that you can reference it visually. You will need to code this functionality with vanilla JS (without Bootstrap) .
+When you click on the header it should open the designated content area. Don't worry about the animation. ￼Screenshot 2023-10-22 at 9.34.38 PM.png
+Contact Us:
+
+At the footer of the page we're going to create a "Contact Us" form.
+The form should have 3 fields:
+first name, last name, and email address
+The form should have a submit button.
+Add validation to the form.
+If any of the fields are empty, then throw an error and message the user to fill in the proper missing field. Show the message as part of the DOM and don't use alert().
+When the form is submitted then highlight the fields are invalid (empty) with a red border.
+The form should only be submitted if all fields are filled. If fields are not filled, then don't allow the form to be submitted.
+Technical Requirements:
+Front-end:
+
+Use plain HTML to structure the application.
+Style the application using CSS. Consider using CSS Grid or Flexbox for layout.
+Implement all functionalities using vanilla JavaScript (i.e., no libraries or frameworks).
+Use an array to store the list of dishes and another array or object to manage the cart.
+Don't write any JavaScript inside of the HTML files. In other words, don't embed JS and don't inline JS into the HTML.
+Storage:
+
+Since we're not using a backend or database, all data can be hardcoded into the JavaScript. No persistence between sessions is expected.
+(Optional) For a slight level-up, you can use the browser's localStorage to remember the cart's contents even if the page is refreshed.
+Additional Simplified Enhancements (optional):
+
+Implement a basic search bar to filter through the list of dishes.
+Tips
+Planning Ahead:
+
+Before diving into coding, take a moment to plan out your project. Create a basic wireframe or sketch of the application to visualize the layout and components.
+Start Small:
+
+Begin with the fundamental features first. For instance, you can start by displaying a list of dishes. Once that works, add the "Add to Cart" functionality.
+Use Descriptive Variable Names:
+
+Instead of using names like arr1 or x, use descriptive names like dishList or cartItems. It makes the code easier to read and understand.
+Modularize Your Code:
+
+Break your code into smaller, reusable functions. For example, a function to add an item to the cart, another to calculate the total price, etc.
+Stay Consistent:
+
+Stick to a consistent naming convention, be it CamelCase, snake_case, etc. Also, keep a consistent structure in your HTML and CSS.
+Test Frequently:
+
+After implementing a new feature, test it immediately. It's easier to spot and fix errors this way.
+Use Browser Developer Tools:
+
+Familiarize yourself with the browser's developer tools. They are invaluable for debugging, especially the console and the elements inspector.
+Keep Data Structures Simple:
+
+Since this is an introductory project, use basic data structures like arrays and objects. Understand them well before moving to more complex structures.
+Comments Are Your Friends:
+
+Write comments in your code to explain what certain parts do, especially if it's complex. However, the goal should be to make the code as self-explanatory as possible.
+Backup Regularly:
+
+Always save and backup your code. Use platforms like GitHub or even cloud storage to keep versions of your project.
+Stay Curious:
+
+If you get stuck, don't be afraid to look up solutions online or ask for help. Platforms like StackOverflow or MDN Web Docs can be invaluable resources.
+Handle Errors Gracefully:
+
+Think of what could go wrong (e.g., what if someone tries to order -1 dishes?). Implement basic error checks and display friendly messages.
+Refactor:
+
+Once your app works, go back and see if there's any code that can be improved, simplified, or removed. 
+Grading
+Render products (12pts)
+Add to cart (10pts)
+Show when out of stock (quantity available) and disable button so that no more items can be added (5pts)
+In cart
+Remove from cart  (2pts)
+Calculate tax  (3pts)
+Order now displays a confirmation message and resets cart (3pts)
+FAQ
+Accordion (5pts)
+Contact Us
+3 fields, validation (4pts)
+Red border if invalid (3pts)
+Form should should only submit if valid (3pts)
+Resources
+MDN Web DocsLinks to an external site. - This resource offers a comprehensive guide on JavaScript, DOM, HTML, and CSS.
+Event reference on MDNLinks to an external site. - A list of various events you can listen to with JavaScript.
+How to Submit
+Use ReplitLinks to an external site. or CodeSandboxLinks to an external site. to complete the work and submit your link for grading. Feel free to post any comments you might have about the assignment activity with your submission. 
+
+Rubric
