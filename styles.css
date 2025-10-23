@@ -26,3 +26,7 @@ div{
 .quantity_div{
     background-color: aqua;
 }
+
+input{
+    width: 23px;
+}

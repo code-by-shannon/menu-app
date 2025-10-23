@@ -100,7 +100,9 @@ allDishes.forEach((dish) =>{
     quant_div.appendChild(input);
     quant_div.classList.add('quantity_div');
     div.appendChild(quant_div);
-   
+    let button = document.createElement('button');
+    button.innerText = 'ORDER';
+    quant_div.appendChild(button);
 });
 
 
