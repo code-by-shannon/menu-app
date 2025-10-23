@@ -91,7 +91,15 @@ allDishes.forEach((dish) =>{
     div.appendChild(p3);
     div.appendChild(img);
 
-    // loop through each key / value pair and log value
+    // Select number of items
+    let quant_div = document.createElement('div');
+    let label = document.createElement('label');
+    label.innerText = `Please enter the number of ${dish.name} for your order:`;
+    quant_div.appendChild(label);
+    let input = document.createElement('input');
+    quant_div.appendChild(input);
+    quant_div.classList.add('quantity_div');
+    div.appendChild(quant_div);
    
 });
 

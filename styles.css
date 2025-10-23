@@ -15,9 +15,14 @@ h1{
 div{
     border:solid black 1px;
     width:40%;
-    margin:auto;
+    margin: 2rem auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(222, 222, 184);
+}
+
+.quantity_div{
+    background-color: aqua;
 }
