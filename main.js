@@ -59,5 +59,23 @@ let angry_octopus = {
 
 const allDishes = [ham_n_cheese, chicken_beaks, old_dirty_sock, random_snack, fries, onion_rings, pop_tarts, biscuits_and_gravy, angry_octopus];
 
-console.log(allDishes);
+allDishes.forEach((dish) =>{
+    let div = document.createElement('div');
+    document.body.appendChild(div);
+    console.log(div.innerHTML);
+
+    let h2 = document.createElement('h2');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let p3 = document.createElement('p');
+
+    h2.innerText = dish.name;
+    div.appendChild(h2);
+    console.log(h2);
+
+    // loop through each key / value pair and log value
+   
+});
+
+
 
