@@ -2,57 +2,66 @@ let ham_n_cheese = {
     name: 'Hot Ham and Cheese',
     description: 'OMG cheese AND ham',
     price : 9.99,
-    quantity_available: 2
+    quantity_available: 2,
+    image: 'imgs/ham_n_cheese.png'
 };
 
 let chicken_beaks = {
     name: 'Crispy Baked Chicken Beaks',
     description: '\'nuff said!',
     price : .25,
-    quantity_available: 200
+    quantity_available: 200,
+    image: 'imgs/chicken_beaks.png'
 };
 
 let old_dirty_sock = {
     name: 'Old and Dirty Sock',
     description: 'pre worn for your convenience',
     price : 39.99,
-    quantity_available: 1
+    quantity_available: 1,
+    image: 'imgs/dirty_sock.png'
 };
 let random_snack = {
     name: 'Random Snack',
     description: 'could be anything: brave eaters only',
     price : 2.50,
-    quantity_available: 9
+    quantity_available: 9,
+    image: 'imgs/question.png'
 };
 let fries = {
     name: 'French Fries',
     description: 'Fresh from the bottom of the fryer',
     price : 5.99,
-    quantity_available: 20
+    quantity_available: 20,
+    image: 'imgs/french_fries.png'
 };
 let onion_rings = {
     name: 'Onion Rings',
     description: 'Bayou Bobby makes \'em fresh every day!',
     price : 9.99,
-    quantity_available: 2
+    quantity_available: 2,
+    image: 'imgs/onion_ring.png'
 };
 let pop_tarts = {
     name: 'Pop Tarts',
     description: 'Why not?',
     price : 2.89,
-    quantity_available: 7
+    quantity_available: 7,
+    image: 'imgs/pop_tart.png'
 };
 let biscuits_and_gravy = {
     name: 'Biscuits AND Gravy',
     description: 'gourmet level',
     price : 999.99,
-    quantity_available: 200000000
+    quantity_available: 200000000,
+    image: 'imgs/biscuits_n_gravy.png'
 };
 let angry_octopus = {
-    name: 'Angry Octopus',
+    name: 'Angry Octopus / Kranky Kraken',
     description: 'Too smart to be eaten, he escaped',
     price : 1.00,
-    quantity_available: 0
+    quantity_available: 0,
+    image: 'imgs/kranky_kraken.png'
 };
 
 
@@ -68,10 +77,19 @@ allDishes.forEach((dish) =>{
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
+    let img = document.createElement('img');
+    img.classList.add('photo-sizing');
+    img.src = dish.image;
 
     h2.innerText = dish.name;
     div.appendChild(h2);
-    console.log(h2);
+    p1.innerText = dish.description;
+    div.appendChild(p1);
+    p2.innerText = "Price: $" + dish.price;
+    div.appendChild(p2);
+    p3.innerText = "Quantity Available:  " + dish.quantity_available;
+    div.appendChild(p3);
+    div.appendChild(img);
 
     // loop through each key / value pair and log value
    

@@ -1,3 +1,19 @@
 body{
     background-color: beige;
 }
+
+.photo-sizing{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    border:solid black 1px;
+    width:40%;
+    margin:auto;
+}
