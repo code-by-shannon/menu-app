@@ -1,3 +1,11 @@
+
+const img_html = document.getElementById('img');
+const item_html = document.getElementById('item');
+const price_html = document.getElementById('price');
+const quantity_html = document.getElementById('quantity');
+const add_html = document.getElementById('add');
+const subtract_html = document.getElementById('subtract');
+
 // menu objects and rendering
 
 let ham_n_cheese = {
@@ -100,14 +108,15 @@ allDishes.forEach((dish) =>{
     let label = document.createElement('label');
     label.innerText = `Please enter the number of ${dish.name} for your order:`;
     quant_div.appendChild(label);
-    let input = document.createElement('input');
-    quant_div.appendChild(input);
     quant_div.classList.add('quantity_div');
     div.appendChild(quant_div);
     let button = document.createElement('button');
     button.innerText = 'ORDER';
 
     button.dataset.name = dish.name;
+    button.dataset.price = dish.price;
+    button.dataset.quantityAvailable = dish.quantity_available;
+    button.dataset.image = dish.image;
     
 
     quant_div.appendChild(button);
@@ -128,9 +137,17 @@ cart_icon.addEventListener('click', () => {
 buttons.forEach(btn => {
    btn.addEventListener('click', (e) =>{
         const name = e.currentTarget.dataset.name;
-        console.log(name);
+        const price = e.currentTarget.dataset.price;
+        const quantityAvailable = e.currentTarget.dataset.quantityAvailable;
+        const image = e.currentTarget.dataset.image;
+        item_html.innerText = name;
+        price_html.innerText = price;
+       
+        
    })
 })
+
+
 
 
 
