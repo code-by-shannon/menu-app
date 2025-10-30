@@ -5,9 +5,7 @@ Develop a web-based food ordering application using just HTML, CSS, and JavaScri
 Requirements:
 Browse Dishes:
 
-Display a list of available dishes on the main page.
-Each dish should have a name, image, brief description, price, and quantity available.
-The dishes should be stored in an array of objects. Each object will represent a dish.
+
 Select Dishes & Order:
 
 Next to each dish, provide an "Add to Cart" button.

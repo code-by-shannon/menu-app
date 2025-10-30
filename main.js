@@ -1,3 +1,5 @@
+// menu objects and rendering
+
 let ham_n_cheese = {
     name: 'Hot Ham and Cheese',
     description: 'OMG cheese AND ham',
@@ -64,12 +66,14 @@ let angry_octopus = {
     image: 'imgs/kranky_kraken.png'
 };
 
+let modal_cart = {};
+const buttons = [];
 
-
-const allDishes = [ham_n_cheese, chicken_beaks, old_dirty_sock, random_snack, fries, onion_rings, pop_tarts, biscuits_and_gravy, angry_octopus];
+ const allDishes = [ham_n_cheese, chicken_beaks, old_dirty_sock, random_snack, fries, onion_rings, pop_tarts, biscuits_and_gravy, angry_octopus];
 
 allDishes.forEach((dish) =>{
     let div = document.createElement('div');
+    div.classList.add('card');
     document.body.appendChild(div);
     console.log(div.innerHTML);
 
@@ -102,8 +106,36 @@ allDishes.forEach((dish) =>{
     div.appendChild(quant_div);
     let button = document.createElement('button');
     button.innerText = 'ORDER';
+
+    button.dataset.name = dish.name;
+    
+
     quant_div.appendChild(button);
+    buttons.push(button);
 });
+
+//  cart icon functionality - modal etc
+
+const cart_icon = document.getElementById('cart');
+const modal = document.getElementById('modal');
+
+cart_icon.addEventListener('click', () => {
+    cart_icon.style.color = 'blue';
+    modal.classList.toggle('hidden');
+});
+
+
+buttons.forEach(btn => {
+   btn.addEventListener('click', (e) =>{
+        const name = e.currentTarget.dataset.name;
+        console.log(name);
+   })
+})
+
+
+
+
+
 
 
 
